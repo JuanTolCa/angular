@@ -1,6 +1,3 @@
-<tr *ngFor=" let x of destinos">
-    <td>{{x}}</td>
-</tr>
 <form>
     <div class="form-group">
       <label for="nombre">Nombre</label>
@@ -13,3 +10,6 @@
     <button type="submit" class="btn btn-primary" (click)="guardar(nombre.value, url.value)">Guardar</button>
   </form>
   <li *ngFor=" let x of destinos">{{x.nombre}}--{{x.url}}</li>
+  <tr *ngFor=" let x of destinos">
+    <td>{{x.nombre}}</td>
+</tr>
